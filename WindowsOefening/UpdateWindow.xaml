@@ -1,0 +1,17 @@
+﻿<Window x:Class="WindowsOefening.UpdateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsOefening"
+        mc:Ignorable="d"
+        Title="UpdateWindow" Height="450" Width="800">
+    <DockPanel>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem HorizontalAlignment="Right">
+                <Label x:Name="passwordLabel" Content="Hier komt de waarde"/>
+            </StatusBarItem>
+        </StatusBar>
+        <Label Content="Fake content zodat statusbar onderaan komt"/>
+    </DockPanel>
+</Window>
