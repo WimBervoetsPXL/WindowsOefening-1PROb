@@ -44,10 +44,8 @@ namespace WindowsOefening
 
         private void OnShowPassword_Clicked(object sender, RoutedEventArgs e)
         {
-            if (updateWindow is null)
+            if (updateWindow is null || !updateWindow.IsVisible)
             {
-
-
                 //Optie 1 : WriteOnly Property
                 updateWindow = new UpdateWindow();
                 updateWindow.PasswordToDisplay = passwordTextBox.Password;
@@ -63,7 +61,6 @@ namespace WindowsOefening
 
                 //Optie 4 : Constructor
                 updateWindow = new UpdateWindow(passwordTextBox.Password);
-
 
 
 
